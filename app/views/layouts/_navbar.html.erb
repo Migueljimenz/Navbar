@@ -1,0 +1,22 @@
+ <body>
+        <header>
+              <%= image_tag "icono-sena.ico", id:"logoNav"%>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#">Area</a></li>
+                    <li><a href="#">Programas</a></li>
+                    <li><a href="#">Fichas</a></li>
+                    <li><%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete, class:'cta'%></li>
+                </ul>
+            </nav>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+    </body>
